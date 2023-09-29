@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media (max-width: 640px) {
+    .porter-text {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+    .porter-subtext {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+@media (min-width: 641px) {
+    .porter-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .porter-subtext {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+.porter-text {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.porter-subtext {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 5rem;
+}
+
 @font-face {
     font-family: "Neuzeit S Bold";
     src: url("../fonts/NeuzeitSLTStd-BookHeavy.eot");
@@ -43,14 +78,15 @@ html, body {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .porter-contact {
     color: #fff;
     background-color: #000;
     border-radius: 10px;
+    margin: 0.5rem;
 }
 
 .bg-color-gradient {
