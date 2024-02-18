@@ -5,20 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/output.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="flex flex-col h-screen">
+    <div class="flex flex-col h-screen porter-intro">
         <div class="flex flex-row w-screen h-1/6 items-center">
             <span class="porter-logo px-12"></span>
             <span class="porter-logo-text text-2xl font-bold">porter</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-color-gradient w-screen h-5/6">
-            <span class="porter-text font-bold pb-5">Relieve work-related <br> burdens with AI.</span>
-            <span class="porter-subtext">Get tedious tasks done by just chatting with Porter.</span>
+        <div class="flex flex-col items-center justify-center w-screen h-5/6">
+            <span class="porter-text font-bold pb-5">Boost productivity and <br> reduce eyestrain with AI.</span>
+            <span class="porter-subtext">Porter learns how to use web UIs to complete your most tedious tasks.</span>
             <div class="flex flex-row">
-                <a class="porter-contact px-8 pb-2 pt-2 text-xl font-bold" href="https://youtu.be/r78pPC_wyZQ" target="_blank">see demo</a>
+                <a class="porter-contact px-8 pb-2 pt-2 text-xl font-bold" href="https://www.youtube.com/watch?v=VQTqKsA9JeY" target="_blank">see demo</a>
                 <a class="porter-contact px-8 pb-2 pt-2 text-xl font-bold" href="mailto:founders@porter.tools">get in touch</a>
             </div>
+        </div>
+        <div class="bg-color-gradient">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="gradients-container">
+              <div class="g1"></div>
+              <div class="g2"></div>
+              <div class="g3"></div>
+              <div class="g4"></div>
+              <div class="g5"></div>
+              <div class="interactive"></div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col h-screen porter-overview">
+        <span class="porter-section-header">Overview</span>
+        <span class="porter-overview-text">Porter is a tool that supports record & replay of UI interactions. You can also give Porter freeform natural language instructions on what to do.</span>
+        <div class="porter-action">
+            <div class="porter-step-container">
+                <span>
+                    Type in test-user@gmail.com to the Email input box
+                </span>
+                <input type="text" placeholder="Add an optional annotation here..."></input>
+            </div>
+            <button class="porter-remove-step"></button>
+        </div>
+        <div class="porter-action">
+            <div class="porter-step-container">
+                <span>
+                    Click the checkbox option to receive email notifications
+                </span>
+                <input type="text" placeholder="Add an optional annotation here..."></input>
+            </div>
+            <button class="porter-remove-step"></button>
+        </div>
+        <div class="porter-action">
+            <div class="porter-step-container">
+                <span>
+                    Click on the blue "Signup for Emails" button
+                </span>
+                <input type="text" placeholder="Add an optional annotation here..."></input>
+            </div>
+            <button class="porter-remove-step"></button>
+        </div>
+        <span class="porter-section-header">Performance</span>
+        <span class="porter-overview-text">
+            Backed by small specialized models and SOTA research, Porter is fast, cheap and fully on-prem capable. 
+        </span>
+        <span class="porter-section-header">Privacy</span>
+        <span class="porter-overview-text">
+            You can save action sequences locally to your device and replay them. Porter runs 100% in-browser, doesn't have a server and doesn't store any of your data.
+        </span>
+        <span class="porter-section-header">Interested?</span>
+        <span class="porter-overview-text ctoa">Let's chat about cutting down your workload!</span>
+        <a class="porter-contact px-8 pb-2 pt-2 text-xl font-bold" href="mailto:founders@porter.tools">get in touch</a>
+        <div class="porter-footer">
+            <span class="porter-logo px-12"></span>
         </div>
     </div>
 </body>
