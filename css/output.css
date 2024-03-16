@@ -810,7 +810,7 @@ html, body {
           backdrop-filter: blur(10px);
   color: rgba(0,0,0,0.5);
   border-radius: 10px;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 3rem 0.5rem;
   transition: 0.5s all ease-in-out;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
